@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "YellowViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *myTextField;
 
 @end
 
@@ -24,4 +26,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    YellowViewController *yVC = (YellowViewController*)segue.destinationViewController;
+    yVC.userStr = _myTextField.text;
+}
+
 @end
+
+
+

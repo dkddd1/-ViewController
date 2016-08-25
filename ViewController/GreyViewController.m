@@ -1,29 +1,18 @@
 //
-//  YellowViewController.m
+//  GreyViewController.m
 //  ViewController
 //
 //  Created by user on 2016. 8. 25..
 //  Copyright © 2016년 ldcc. All rights reserved.
 //
 
-#import "YellowViewController.h"
 #import "GreyViewController.h"
 
-@interface YellowViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@interface GreyViewController ()
 
 @end
 
-@implementation YellowViewController
-- (IBAction)buttonClicked:(id)sender {
-    [self performSegueWithIdentifier:@"blueway" sender:nil];
-    
-}
-- (IBAction)greyButtonClicked:(id)sender {
-    GreyViewController *gVC = [self.storyboard instantiateViewControllerWithIdentifier:@"greyview"];
-    
-    [self.navigationController pushViewController:gVC animated:YES];
-}
+@implementation GreyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

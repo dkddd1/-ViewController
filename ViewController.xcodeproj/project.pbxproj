@@ -16,6 +16,7 @@
 		CE2602741D6EB5550009B5EB /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2602731D6EB5550009B5EB /* YellowViewController.m */; };
 		CE2602771D6EBA350009B5EB /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2602761D6EBA350009B5EB /* BlueViewController.m */; };
 		CE26027A1D6EBAB70009B5EB /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2602791D6EBAB70009B5EB /* GreenViewController.m */; };
+		CE26027D1D6EC4930009B5EB /* GreyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE26027C1D6EC4930009B5EB /* GreyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		CE2602761D6EBA350009B5EB /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
 		CE2602781D6EBAB70009B5EB /* GreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
 		CE2602791D6EBAB70009B5EB /* GreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
+		CE26027B1D6EC4930009B5EB /* GreyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreyViewController.h; sourceTree = "<group>"; };
+		CE26027C1D6EC4930009B5EB /* GreyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				CE2602761D6EBA350009B5EB /* BlueViewController.m */,
 				CE2602781D6EBAB70009B5EB /* GreenViewController.h */,
 				CE2602791D6EBAB70009B5EB /* GreenViewController.m */,
+				CE26027B1D6EC4930009B5EB /* GreyViewController.h */,
+				CE26027C1D6EC4930009B5EB /* GreyViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				CE26027A1D6EBAB70009B5EB /* GreenViewController.m in Sources */,
 				CE2602631D6EAB0A0009B5EB /* ViewController.m in Sources */,
 				CE2602601D6EAB0A0009B5EB /* AppDelegate.m in Sources */,
+				CE26027D1D6EC4930009B5EB /* GreyViewController.m in Sources */,
 				CE26025D1D6EAB0A0009B5EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

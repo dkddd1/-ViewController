@@ -24,13 +24,24 @@
                                     <action selector="buttonClicked:" destination="iyd-1T-EwV" eventType="touchUpInside" id="NV2-Ja-3iM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsM-J1-Jkx">
+                                <rect key="frame" x="109" y="235" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Yellow" id="3ZP-bp-rCc">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="emT-mb-fS0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Grey" id="emT-mb-fS0">
+                            <connections>
+                                <action selector="greyButtonClicked:" destination="iyd-1T-EwV" id="6HN-cy-jkd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="myLabel" destination="GsM-J1-Jkx" id="k6W-J6-MU2"/>
                         <segue destination="UbD-VO-HcX" kind="show" identifier="blueway" id="A68-q2-aoM"/>
                         <segue destination="Coz-l8-C9R" kind="show" identifier="greenway" id="rsU-i4-xez"/>
                     </connections>
@@ -58,6 +69,24 @@
             </objects>
             <point key="canvasLocation" x="-86" y="493"/>
         </scene>
+        <!--Grey View Controller-->
+        <scene sceneID="vAd-EG-Trj">
+            <objects>
+                <viewController storyboardIdentifier="greyview" id="H1N-pT-BwW" customClass="GreyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cof-HL-VrF"/>
+                        <viewControllerLayoutGuide type="bottom" id="NqR-fZ-4kg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zag-13-WwW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwP-In-1xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634" y="-254"/>
+        </scene>
         <!--Blue-->
         <scene sceneID="dWY-SF-bv9">
             <objects>
@@ -75,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNQ-h4-wEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="728" y="-254"/>
+            <point key="canvasLocation" x="673" y="493"/>
         </scene>
         <!--Red-->
         <scene sceneID="tne-QT-ifu">
@@ -96,10 +125,18 @@
                                     <segue destination="iyd-1T-EwV" kind="show" id="9mZ-Nh-sUW"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHU-us-fTZ">
+                                <rect key="frame" x="95" y="194" width="253" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Red" id="HDE-IB-2VR"/>
+                    <connections>
+                        <outlet property="myTextField" destination="NHU-us-fTZ" id="rGr-K2-cUd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

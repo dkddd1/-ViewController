@@ -1,5 +1,5 @@
 //
-//  YellowViewController.h
+//  GreyViewController.h
 //  ViewController
 //
 //  Created by user on 2016. 8. 25..
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YellowViewController : UIViewController
-@property (nonatomic, strong) NSString *userStr;
+@interface GreyViewController : UIViewController
 
 @end
