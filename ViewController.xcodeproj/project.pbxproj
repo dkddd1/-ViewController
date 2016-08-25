@@ -13,6 +13,9 @@
 		CE2602661D6EAB0A0009B5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2602641D6EAB0A0009B5EB /* Main.storyboard */; };
 		CE2602681D6EAB0A0009B5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2602671D6EAB0A0009B5EB /* Assets.xcassets */; };
 		CE26026B1D6EAB0A0009B5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2602691D6EAB0A0009B5EB /* LaunchScreen.storyboard */; };
+		CE2602741D6EB5550009B5EB /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2602731D6EB5550009B5EB /* YellowViewController.m */; };
+		CE2602771D6EBA350009B5EB /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2602761D6EBA350009B5EB /* BlueViewController.m */; };
+		CE26027A1D6EBAB70009B5EB /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2602791D6EBAB70009B5EB /* GreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		CE2602671D6EAB0A0009B5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE26026A1D6EAB0A0009B5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE26026C1D6EAB0A0009B5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2602721D6EB5550009B5EB /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
+		CE2602731D6EB5550009B5EB /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
+		CE2602751D6EBA350009B5EB /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		CE2602761D6EBA350009B5EB /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		CE2602781D6EBAB70009B5EB /* GreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
+		CE2602791D6EBAB70009B5EB /* GreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				CE2602691D6EAB0A0009B5EB /* LaunchScreen.storyboard */,
 				CE26026C1D6EAB0A0009B5EB /* Info.plist */,
 				CE26025B1D6EAB0A0009B5EB /* Supporting Files */,
+				CE2602721D6EB5550009B5EB /* YellowViewController.h */,
+				CE2602731D6EB5550009B5EB /* YellowViewController.m */,
+				CE2602751D6EBA350009B5EB /* BlueViewController.h */,
+				CE2602761D6EBA350009B5EB /* BlueViewController.m */,
+				CE2602781D6EBAB70009B5EB /* GreenViewController.h */,
+				CE2602791D6EBAB70009B5EB /* GreenViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -149,6 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2602741D6EB5550009B5EB /* YellowViewController.m in Sources */,
+				CE2602771D6EBA350009B5EB /* BlueViewController.m in Sources */,
+				CE26027A1D6EBAB70009B5EB /* GreenViewController.m in Sources */,
 				CE2602631D6EAB0A0009B5EB /* ViewController.m in Sources */,
 				CE2602601D6EAB0A0009B5EB /* AppDelegate.m in Sources */,
 				CE26025D1D6EAB0A0009B5EB /* main.m in Sources */,
