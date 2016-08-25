@@ -21,7 +21,26 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeBack) name:@"ChangeBackColor"    object:nil];
+    
+    self.myTextField.delegate = self;
+    
+    UITapGestureRecognizer *tapGesutre = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    
+    [self.view addGestureRecognizer:tapGesutre];
+    
 }
+
+- (void)tap:(UITapGestureRecognizer *)param
+{
+    [self.myTextField resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.myTextField resignFirstResponder];
+    return YES;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
