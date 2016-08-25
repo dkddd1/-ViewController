@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GreenViewController.h"
 
-@interface YellowViewController : UIViewController
+@interface YellowViewController : UIViewController <GreenViewDelegate> 
 @property (nonatomic, strong) NSString *userStr;
 
 @end

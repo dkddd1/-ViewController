@@ -8,6 +8,8 @@
 
 #import "YellowViewController.h"
 #import "GreyViewController.h"
+#import "GreenViewController.h"
+#import "AppDelegate.h"
 
 @interface YellowViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
@@ -16,7 +18,7 @@
 
 @implementation YellowViewController
 - (IBAction)buttonClicked:(id)sender {
-    [self performSegueWithIdentifier:@"blueway" sender:nil];
+    [self performSegueWithIdentifier:@"greenway" sender:nil];
     
 }
 - (IBAction)greyButtonClicked:(id)sender {
@@ -28,21 +30,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //self.myLabel.text = self.userStr;
+    
+    
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+//    self.myLabel.text = self.userStr;
+    AppDelegate *appDelegate =  [UIApplication sharedApplication].delegate;
+    
+    NSString *str = appDelegate.tmpStr;
+    
+    self.myLabel.text = str;
+    
+}
+
+- (void)changeText
+{
+  // self.myLabel.text = @"TEST";
+    self.userStr = @"TEST";
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+#pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    GreenViewController *gVC = (GreenViewController*)segue.destinationViewController;
+    gVC.pVC = self;
+
 }
-*/
+
 
 @end

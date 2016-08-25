@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol GreenViewDelegate
+- (void)changeText;
+@end
 
 @interface GreenViewController : UIViewController
-
+@property (nonatomic, strong) id<GreenViewDelegate> pVC;
 @end

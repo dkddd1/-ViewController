@@ -7,12 +7,24 @@
 //
 
 #import "GreenViewController.h"
-
+#import "AppDelegate.h"
 @interface GreenViewController ()
 
 @end
 
 @implementation GreenViewController
+- (IBAction)textChange:(id)sender {
+    
+    //if ([self.pVC repondsToSelector:])
+//    [self.pVC changeText];
+    
+//    AppDelegate *appDelegate =  [UIApplication sharedApplication].delegate;
+//    
+//    appDelegate.tmpStr = @"NEW";
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ChangeBackColor" object: self userInfo:nil];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
